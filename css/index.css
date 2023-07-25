@@ -1,0 +1,70 @@
+body {
+  background-color: #1b2028;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+@media (max-width: 768px) {
+  .header .my-logo-text {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 400px) {
+  .header .my-logo-image {
+    width: 40px;
+    height: 40px;
+  }
+  .header .my-logo-text {
+    font-size: 16px !important;
+  }
+}
+
+.hero-wrapper {
+  height: 100vh;
+  background: url("../images/hero-background.jpg") 0 0/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-wrapper .hero-wrapper__text-block p {
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+@media (max-width: 992px) {
+  .hero-wrapper .hero-wrapper__text-block p {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 576px) {
+  .hero-wrapper .hero-wrapper__text-block p {
+    font-size: 14px !important;
+  }
+}
+.hero-wrapper .hero-wrapper__text-block h1 {
+  font-size: 70px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+}
+@media (max-width: 992px) {
+  .hero-wrapper .hero-wrapper__text-block h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-wrapper .hero-wrapper__text-block h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-wrapper .hero-wrapper__text-block h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+}

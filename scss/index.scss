@@ -2,6 +2,7 @@ body {
   background-color: #1b2028;
 }
 
+// HEADER
 .header {
   position: fixed;
   top: 0;
@@ -30,6 +31,7 @@ body {
   }
 }
 
+// HERO
 .hero-wrapper {
   height: 100vh;
   background: url('../images/hero-background.jpg')0 0/cover no-repeat;
@@ -84,5 +86,107 @@ body {
       }
     }
 
+  }
+}
+
+// ABOUT section
+.about {
+  // margin-bottom: 30px;
+
+  // photo
+  .about__photo {
+    width: 100%;
+
+    @media (max-width: 576px) {
+      & {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .about__description {
+
+    // description
+    & p {
+      // color: #acacac;
+      line-height: 1.5;
+
+      @media (max-width: 1200px) {
+        & {
+          font-size: 18px !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        & {
+          font-size: 16px !important;
+        }
+      }
+    }
+
+    // Links list
+    .about__social-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      display: flex;
+
+      & li {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+
+        background-color: rgba(60, 60, 60, 0.5);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        & i {
+          color: #fff;
+          transition: 0.2s;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          & i {
+            color: #73bc29 !important;
+            transform: scale(1.05);
+          }
+        }
+
+        @media (max-width: 576px) {
+          & {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    & button {
+      background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+      box-shadow: inset 0 0 0 0 #72b232;
+      transition: .2s ease-in-out, box-shadow .3s ease-in-out;
+
+      &:hover {
+        box-shadow: inset 200px 0 0 0 rgba(113, 195, 46, 0.5);
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+// BENEFETS section
+.benefits {
+
+  h2 {
+    letter-spacing: 3px;
   }
 }

@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/favicon-suitcase.png" />
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="./libraries/fontawesome-free-6.4.0-web/css/all.min.css"
+    />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.min.css" />
     <!-- My CSS -->
@@ -65,10 +70,10 @@
                     <a class="nav-link text-white" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Education</a>
+                    <a class="nav-link text-white" href="#benefits">Benefits</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Experience</a>
+                    <a class="nav-link text-white" href="#">Education</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#">Portfolio</a>
@@ -119,28 +124,160 @@
     </div>
 
     <!-- About section -->
-    <div id="about">
+    <div id="about" class="my-5 py-5 about">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <img src="" alt="Bohdan's photo" />
+          <div
+            class="col-8 col-sm-8 mx-auto mb-xs-5 mb-sm-5 m-lg-0 col-lg-5 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="./images/photo.jpg"
+              alt="Bohdan's photo"
+              class="rounded-3 about__photo"
+            />
           </div>
-          <div class="col text-white">
-            <h2>Hi! I am Bohdan</h2>
-            <p>
+
+          <div
+            class="col-12 col-sm-12 col-lg-7 px-md-5 d-flex flex-column justify-content-center align-items-center text-white about__description"
+          >
+            <h2 class="mb-sm-5">Hi! I am Bohdan</h2>
+
+            <p class="text-white-50 fs-5">
               I'm a passionate front-end developer with a strong understanding
               of HTML, CSS, and JavaScript.
             </p>
-            <p>
+            <p class="text-white-50 fs-5">
               I'm also a strong believer in user experience (UX) design. I take
               the time to understand the needs of my users and create interfaces
               that are both beautiful and functional.
             </p>
-            <p>
+            <p class="text-white-50 mb-5 fs-5">
               I'm always looking for new challenges and opportunities to learn
               and grow. If you're interested in working with me, please feel
               free to contact me.
             </p>
+
+            <ul class="mb-5 about__social-list">
+              <li
+                class="d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <a href="#"><i class="fa-brands fa-telegram fs-3"></i></a>
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <a href="#"><i class="fa-brands fa-instagram fs-3"></i></a>
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <a href="#"><i class="fa-brands fa-linkedin-in fs-3"></i></a>
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <a href="#"><i class="fa-brands fa-github fs-3"></i></a>
+              </li>
+            </ul>
+
+            <button
+              type="button"
+              class="btn btn-primary px-5 py-2 border-0 text-uppercase"
+            >
+              hire me!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefits section -->
+    <div id="benefits" class="py-5 benefits">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="fw-bolder text-uppercase text-white text-center py-5">
+              benefits
+              <span class="text-white-50 fs-3 fst-italic"
+                >of working with me</span
+              >
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 mx-auto">
+            <div
+              class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0"
+            >
+              <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
+                <img src="./images/icons/antenna.png" alt="antenna" class="" />
+              </div>
+              <div class="card-body px-0">
+                <h5 class="card-title text-light text-uppercase">
+                  attention to detail
+                </h5>
+                <p class="card-text text-white-50 benefits__card-text">
+                  Ability to identify and correct minor errors in code, design,
+                  and functionality. This is an important skill because even
+                  small mistakes can have a big impact on the UX.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mx-auto">
+            <div
+              class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0"
+            >
+              <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
+                <img src="./images/icons/clock.png" alt="antenna" class="" />
+              </div>
+              <div class="card-body px-0">
+                <h5 class="card-title text-light text-uppercase">
+                  punctuality
+                </h5>
+                <p class="card-text text-white-50">
+                  Always complete the tasks set before me on time. Respect for
+                  the client is an important value.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mx-auto">
+            <div
+              class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0"
+            >
+              <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
+                <img src="./images/icons/diagram.png" alt="antenna" class="" />
+              </div>
+              <div class="card-body px-0">
+                <h5 class="card-title text-light text-uppercase">planning</h5>
+                <p class="card-text text-white-50">
+                  Plan my time and stages of work in advance. I will discuss all
+                  the important details of the project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mx-auto">
+            <div
+              class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0"
+            >
+              <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
+                <img
+                  src="./images/icons/astronaut.png"
+                  alt="antenna"
+                  class=""
+                />
+              </div>
+              <div class="card-body px-0">
+                <h5 class="card-title text-light text-uppercase">
+                  modern technology
+                </h5>
+                <p class="card-text text-white-50">
+                  I always use modern tools and new approaches in my work.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

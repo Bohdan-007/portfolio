@@ -1,3 +1,77 @@
+.contact form button, .about .about__description button {
+  background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+.contact form button:before, .about .about__description button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at 10% 20%, rgb(85, 149, 27) 0.1%, rgb(183, 219, 87) 90%);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.contact form button:hover, .about .about__description button:hover {
+  color: white;
+}
+.contact form button:hover:before, .about .about__description button:hover:before {
+  transform: scaleX(1);
+}
+.contact form button:active, .about .about__description button:active {
+  transform: scale(0.95);
+}
+
+.education .education__accordion-title {
+  background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+.education .education__accordion-title:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 10% 20%, rgb(85, 149, 27) 0.1%, rgb(183, 219, 87) 90%);
+  border-radius: 100%;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.education .education__accordion-title:hover {
+  color: white;
+}
+.education .education__accordion-title:hover:before {
+  transform: scale(2);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 body {
   background-color: #1b2028;
 }
@@ -33,7 +107,6 @@ body {
   align-items: center;
 }
 .hero-wrapper .hero-wrapper__text-block p {
-  color: rgba(255, 255, 255, 0.6);
   letter-spacing: 2px;
   line-height: 1.2;
 }
@@ -69,9 +142,6 @@ body {
   }
 }
 
-.about .about__photo {
-  width: 100%;
-}
 @media (max-width: 576px) {
   .about .about__photo {
     margin-bottom: 40px;
@@ -91,9 +161,6 @@ body {
   }
 }
 .about .about__description .about__social-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
 }
 .about .about__description .about__social-list li {
@@ -106,7 +173,7 @@ body {
   margin-right: 0;
 }
 .about .about__description .about__social-list li i {
-  color: #fff;
+  color: #ffffff;
   transition: 0.2s;
 }
 .about .about__description .about__social-list li:hover {
@@ -122,19 +189,24 @@ body {
     height: 40px;
   }
 }
-.about .about__description button {
-  background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
-  box-shadow: inset 0 0 0 0 #72b232;
-  transition: 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.about .about__description button:hover {
-  box-shadow: inset 200px 0 0 0 rgba(113, 195, 46, 0.5);
-  transform: scale(1.05);
-}
-.about .about__description button:active {
-  transform: scale(0.95);
+.service h2 {
+  letter-spacing: 3px;
 }
 
 .benefits h2 {
   letter-spacing: 3px;
+}
+
+.education h2 {
+  letter-spacing: 3px;
+}
+.contact h2,
+.contact h3 {
+  letter-spacing: 3px;
+}
+.contact a {
+  transition: 0.1s;
+}
+.contact a:hover {
+  color: #ffffff !important;
 }

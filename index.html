@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- Favicon -->
-    <link rel="stylesheet" href="./libraries/fontawesome/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-suitcase.png" />
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="./libraries/fontawesome-free-6.4.0-web/css/all.min.css"
-    />
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.min.css" />
+    <!-- Hover CSS -->
+    <!-- <link rel="stylesheet" href="./plugins/hover/css/hover.css"> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.min.css" />
+    <!-- jQueri UI -->
+    <link rel="stylesheet" href="./libraries/jqueri-ui/css/jquery-ui.min.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -70,16 +71,21 @@
                     <a class="nav-link text-white" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#benefits">Benefits</a>
+                    <a class="nav-link text-white" href="#service">Service</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Education</a>
+                    <a class="nav-link text-white" href="#benefits">Benefits</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Contacts</a>
+                    <a class="nav-link text-white" href="#education"
+                      >Education</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Contacts</a>
                   </li>
                   <!-- <li class="nav-item dropdown">
                       <a
@@ -118,7 +124,7 @@
       <div
         class="d-flex flex-column justify-content-center align-items-center hero-wrapper__text-block"
       >
-        <p class="mb-3 fs-3 text-uppercase">hello! I'm</p>
+        <p class="mb-3 text-white-50 fs-3 text-uppercase">hello! I'm</p>
         <h1 class="m-0 text-white text-uppercase">Bohdan Boliubash</h1>
       </div>
     </div>
@@ -133,7 +139,7 @@
             <img
               src="./images/photo.jpg"
               alt="Bohdan's photo"
-              class="rounded-3 about__photo"
+              class="w-100 rounded-3 about__photo"
             />
           </div>
 
@@ -161,22 +167,34 @@
               <li
                 class="d-flex justify-content-center align-items-center rounded-circle"
               >
-                <a href="#"><i class="fa-brands fa-telegram fs-3"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/bohdan-boliubash-1b5b29279/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in fs-3"></i
+                ></a>
               </li>
               <li
                 class="d-flex justify-content-center align-items-center rounded-circle"
               >
-                <a href="#"><i class="fa-brands fa-instagram fs-3"></i></a>
+                <a href="https://t.me/b_o_s_ik" target="_blank"
+                  ><i class="fa-brands fa-telegram fs-3"></i
+                ></a>
               </li>
               <li
                 class="d-flex justify-content-center align-items-center rounded-circle"
               >
-                <a href="#"><i class="fa-brands fa-linkedin-in fs-3"></i></a>
+                <a
+                  href="https://instagram.com/b_o_s.s.s?igshid=OGQ5ZDc2ODk2ZA=="
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram fs-3"></i
+                ></a>
               </li>
               <li
                 class="d-flex justify-content-center align-items-center rounded-circle"
               >
-                <a href="#"><i class="fa-brands fa-github fs-3"></i></a>
+                <a href="https://github.com/Bohdan-007" target="_blank"
+                  ><i class="fa-brands fa-github fs-3"></i
+                ></a>
               </li>
             </ul>
 
@@ -191,9 +209,28 @@
       </div>
     </div>
 
+    <!-- Service section -->
+    <div id="service" class="py-5 service">
+      <div class="container">
+        <!-- title -->
+        <div class="row">
+          <div class="col">
+            <h2 class="fw-bolder text-uppercase text-white text-center py-5">
+              service
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <p class="text-white-50">under development...</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Benefits section -->
     <div id="benefits" class="py-5 benefits">
       <div class="container">
+        <!-- title -->
         <div class="row">
           <div class="col">
             <h2 class="fw-bolder text-uppercase text-white text-center py-5">
@@ -206,9 +243,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-sm-6 col-lg-3 mx-auto">
-            <div
-              class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0"
-            >
+            <div class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0">
               <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
                 <img src="./images/icons/antenna.png" alt="antenna" class="" />
               </div>
@@ -225,9 +260,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 mx-auto">
-            <div
-              class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0"
-            >
+            <div class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0">
               <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
                 <img src="./images/icons/clock.png" alt="antenna" class="" />
               </div>
@@ -243,9 +276,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 mx-auto">
-            <div
-              class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0"
-            >
+            <div class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0">
               <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
                 <img src="./images/icons/diagram.png" alt="antenna" class="" />
               </div>
@@ -259,9 +290,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 mx-auto">
-            <div
-              class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0"
-            >
+            <div class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0">
               <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
                 <img
                   src="./images/icons/astronaut.png"
@@ -283,8 +312,163 @@
       </div>
     </div>
 
+    <!-- Education section -->
+    <div id="education" class="py-5 education">
+      <div class="container">
+        <!-- title -->
+        <div class="row">
+          <div class="col">
+            <h2 class="fw-bolder text-uppercase text-white text-center py-5">
+              education
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div id="accordion">
+              <h3
+                class="py-3 text-dark fw-bolder border-success education__accordion-title"
+              >
+                IT Step Academy
+              </h3>
+              <div class="bg-dark border-0">
+                <p class="text-white-50">
+                  From 2022, I study at IT Step Academy on the Front-End course.
+                </p>
+              </div>
+
+              <h3
+                class="py-3 text-dark text-capitalize fw-bolder border-success education__accordion-title"
+              >
+                harvard course
+              </h3>
+              <div class="bg-dark border-0">
+                <p class="text-white-50">
+                  In 2022 graduated Harvard's CS50 online Web Programming
+                  Course.
+                </p>
+                <p class="text-white-50">
+                  "CS50" is a programming course from Harvard University, which
+                  is considered the best computer literacy course in the world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact" class="contact py-5">
+      <div class="container">
+        <!-- title -->
+        <div class="row">
+          <div class="col-12">
+            <h2 class="fw-bolder text-uppercase text-white text-center py-5">
+              get in touch
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- form -->
+          <div class="col-12 col-md-6 mb-4 m-md-0">
+            <h3 class="text-capitalize text-white py-4">mail me</h3>
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-12">
+                <input
+                  type="text"
+                  class="form-control bg-dark-subtle border-0"
+                  id="validationCustom01"
+                  placeholder="Name"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+
+              <div class="col-12">
+                <input
+                  type="email"
+                  class="form-control bg-dark-subtle border-0"
+                  id="validationCustom02"
+                  placeholder="E-mail"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-12">
+                <input
+                  type="text"
+                  class="form-control bg-dark-subtle border-0"
+                  id="validationCustom02"
+                  placeholder="Subject"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+
+              <div class="col-12">
+                <textarea
+                  class="form-control bg-dark-subtle border-0"
+                  placeholder="Message"
+                ></textarea>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="btn btn-primary px-5 py-2 border-0 text-uppercase"
+                >
+                  send message
+                  <i class="fa-solid fa-share ms-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- contact -->
+          <div class="col-12 col-md-4 mx-md-auto">
+            <h3 class="text-capitalize text-white py-4">my contact details</h3>
+            <ul>
+              <li class="mb-4">
+                <p
+                  class="mb-1 text-success-emphasis fw-semibold text-uppercase"
+                >
+                  <i class="fa-solid fa-envelope me-2"></i>
+                  email
+                </p>
+                <a
+                  href="mailto:elsetech133718@gmail.com"
+                  class="text-white-50 fst-italic text-decoration-none"
+                  >elsetech133718@gmail.com</a
+                >
+              </li>
+              <li>
+                <p
+                  class="mb-1 text-success-emphasis fw-semibold text-uppercase"
+                >
+                  <i class="fa-solid fa-mobile-screen-button me-2"></i>
+                  phone
+                </p>
+                <a
+                  href="tel:+380630159833"
+                  class="text-white-50 fst-italic text-decoration-none"
+                  >+38 063 01 59 833</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="./libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jQueri -->
+    <script src="./libraries/jqueri/js/jquery-3.7.0.min.js"></script>
+    <!-- jQueri UI -->
+    <script src="./libraries/jqueri-ui/js/jquery-ui.min.js"></script>
     <!-- My JS -->
     <script src="./js/index.js"></script>
   </body>

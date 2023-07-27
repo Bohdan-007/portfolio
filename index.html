@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.min.css" />
     <!-- jQueri UI -->
     <link rel="stylesheet" href="./libraries/jqueri-ui/css/jquery-ui.min.css" />
+    <!-- Animation CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -127,8 +132,17 @@
       <div
         class="d-flex flex-column justify-content-center align-items-center hero-wrapper__text-block"
       >
-        <p class="mb-3 text-white-50 fs-3 text-uppercase">hello! I'm</p>
-        <h1 class="m-0 text-white text-uppercase">Bohdan Boliubash</h1>
+        <p
+          class="mb-3 text-white-50 fs-3 text-uppercase animate__animated animate__fadeInUp"
+        >
+          hello! I'm
+        </p>
+        <h1
+          id="heroTitle"
+          class="m-0 text-white text-uppercase animate__animated animate__fadeInUp"
+        >
+          Bohdan Boliubash
+        </h1>
       </div>
     </div>
 
@@ -137,7 +151,7 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-8 col-sm-8 mx-auto mb-xs-5 mb-sm-5 m-lg-0 col-lg-5 d-flex justify-content-center align-items-center"
+            class="col-8 col-sm-8 mx-auto mb-xs-5 mb-sm-5 m-lg-0 col-lg-5 d-flex justify-content-center align-items-center animate__animated animate-left"
           >
             <img
               src="./images/photo.jpg"
@@ -147,7 +161,7 @@
           </div>
 
           <div
-            class="col-12 col-sm-12 col-lg-7 px-md-5 d-flex flex-column justify-content-center align-items-center text-white about__description"
+            class="col-12 col-sm-12 col-lg-7 px-md-5 d-flex flex-column justify-content-center align-items-center text-white animate__animated animate-right about__description"
           >
             <h2 class="mb-sm-5">Hi! I am Bohdan</h2>
 
@@ -219,7 +233,7 @@
         <div class="row">
           <div class="col">
             <h2
-              class="fw-bolder text-uppercase text-white text-center py-5 mb-5"
+              class="fw-bolder text-uppercase text-white text-center py-5 mb-5 animate__animated animate-fadein"
             >
               portfolio
             </h2>
@@ -240,11 +254,11 @@
         <div class="row">
           <div class="col text-center">
             <span
-              class="pt-5 fs-5 text-white-50 fw-bolder text-uppercase fst-italic service__subtitle"
+              class="pt-5 fs-5 text-white-50 fw-bolder text-uppercase fst-italic service__subtitle animate__animated animate-fadein"
               >what i do</span
             >
             <h2
-              class="fw-bolder text-uppercase text-white text-center pt-2 pb-5"
+              class="fw-bolder text-uppercase text-white text-center pt-2 pb-5 animate__animated animate-fadein"
             >
               services
             </h2>
@@ -254,8 +268,8 @@
         <div class="row">
           <div class="col-12 col-sm-6 col-md-4 mb-5 mb-md-0">
             <div class="card bg-transparent text-center border-0 service__card">
-              <i class="fa-regular fa-lightbulb fs-1 service__icon"></i>
-              <div class="card-body">
+              <i class="fa-regular fa-lightbulb fs-1 animate__animated animate-fadein-top-left service__icon"></i>
+              <div class="card-body animate__animated animate-fade-down">
                 <h5 class="card-title text-light text-uppercase">
                   Innvation idea
                 </h5>
@@ -269,8 +283,8 @@
 
           <div class="col-12 col-sm-6 col-md-4 mb-5 mb-md-0">
             <div class="card bg-transparent text-center border-0 service__card">
-              <i class="fa-solid fa-code fs-1 service__icon"></i>
-              <div class="card-body">
+              <i class="fa-solid fa-code fs-1 animate__animated animate-fade-down-big service__icon"></i>
+              <div class="card-body animate__animated animate-fade-down">
                 <h5 class="card-title text-light text-uppercase">
                   web development
                 </h5>
@@ -287,9 +301,9 @@
           <div class="col-12 col-sm-6 col-md-4 mb-5 mb-md-0">
             <div class="card bg-transparent text-center border-0 service__card">
               <i
-                class="fa-solid fa-mobile-screen-button fs-1 service__icon"
+                class="fa-solid fa-mobile-screen-button fs-1 animate__animated animate-fadein-top-right service__icon"
               ></i>
-              <div class="card-body">
+              <div class="card-body animate__animated animate-fade-down">
                 <h5 class="card-title text-light text-uppercase">
                   application
                 </h5>
@@ -311,7 +325,7 @@
         <!-- title -->
         <div class="row">
           <div class="col">
-            <h2 class="fw-bolder text-uppercase text-white text-center py-5">
+            <h2 class="fw-bolder text-uppercase text-white text-center py-5 animate__animated animate-fadein">
               benefits
               <span class="text-white-50 fs-3 fst-italic"
                 >of working with me</span
@@ -323,9 +337,9 @@
           <div class="col-12 col-sm-6 col-lg-3 mx-auto">
             <div class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0">
               <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
-                <img src="./images/icons/antenna.png" alt="antenna" class="" />
+                <img src="./images/icons/antenna.png" alt="antenna" class="animate__animated animate-fadein" />
               </div>
-              <div class="card-body px-0">
+              <div class="card-body px-0 animate__animated animate-fade-down">
                 <h5 class="card-title text-light text-uppercase">
                   attention to detail
                 </h5>
@@ -340,9 +354,9 @@
           <div class="col-12 col-sm-6 col-lg-3 mx-auto">
             <div class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0">
               <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
-                <img src="./images/icons/clock.png" alt="antenna" class="" />
+                <img src="./images/icons/clock.png" alt="antenna" class="animate__animated animate-fadein" />
               </div>
-              <div class="card-body px-0">
+              <div class="card-body px-0 animate__animated animate-fade-down">
                 <h5 class="card-title text-light text-uppercase">
                   punctuality
                 </h5>
@@ -356,9 +370,9 @@
           <div class="col-12 col-sm-6 col-lg-3 mx-auto">
             <div class="card mb-5 mb-lg-0 bg-transparent border-0 rounded-0">
               <div class="mb-2 mb-sm-4 py-2 bg-secondary rounded-2 text-center">
-                <img src="./images/icons/diagram.png" alt="antenna" class="" />
+                <img src="./images/icons/diagram.png" alt="antenna" class="animate__animated animate-fadein" />
               </div>
-              <div class="card-body px-0">
+              <div class="card-body px-0 animate__animated animate-fade-down">
                 <h5 class="card-title text-light text-uppercase">planning</h5>
                 <p class="card-text text-white-50">
                   Plan my time and stages of work in advance. I will discuss all
@@ -373,10 +387,10 @@
                 <img
                   src="./images/icons/astronaut.png"
                   alt="antenna"
-                  class=""
+                  class="animate__animated animate-fadein"
                 />
               </div>
-              <div class="card-body px-0">
+              <div class="card-body px-0 animate__animated animate-fade-down">
                 <h5 class="card-title text-light text-uppercase">
                   modern technology
                 </h5>
@@ -396,7 +410,7 @@
         <!-- title -->
         <div class="row">
           <div class="col">
-            <h2 class="fw-bolder text-uppercase text-white text-center py-5">
+            <h2 class="fw-bolder text-uppercase text-white text-center py-5 animate__animated animate-fadein">
               education
             </h2>
           </div>
@@ -443,7 +457,7 @@
         <!-- title -->
         <div class="row">
           <div class="col-12">
-            <h2 class="fw-bolder text-uppercase text-white text-center py-5">
+            <h2 class="fw-bolder text-uppercase text-white text-center py-5 animate__animated animate-fadein">
               get in touch
             </h2>
           </div>
@@ -451,8 +465,8 @@
         <div class="row">
           <!-- form -->
           <div class="col-12 col-md-6 mb-4 m-md-0">
-            <h3 class="text-capitalize text-white py-4">mail me</h3>
-            <form class="row g-3 needs-validation" novalidate>
+            <h3 class="text-capitalize text-white py-4 animate__animated animate-fade-down">mail me</h3>
+            <form class="row g-3 needs-validation animate__animated animate-left" novalidate>
               <div class="col-12">
                 <input
                   type="text"
@@ -507,8 +521,8 @@
 
           <!-- contact -->
           <div class="col-12 col-md-4 mx-md-auto">
-            <h3 class="text-capitalize text-white py-4">my contact details</h3>
-            <ul>
+            <h3 class="text-capitalize text-white py-4 animate__animated animate-fade-down">my contact details</h3>
+            <ul class="animate__animated animate-right">
               <li class="mb-4">
                 <p
                   class="mb-1 text-success-emphasis fw-semibold text-uppercase"
@@ -541,7 +555,7 @@
       </div>
     </div>
 
-    <!-- Footer section -->
+    <!-- Footer -->
     <div class="py-4 bg-black bg-opacity-50 footer">
       <div class="container">
         <div class="row">
@@ -560,12 +574,22 @@
               <span class="fs-4 text-white my-logo-text">BOHDAN BOLIUBASH</span>
             </a>
 
-            <p class="mb-2 text-success-emphasis fw-semibold text-uppercase">Country: <span class="ms-2 text-white-50 text-capitalize">Ukraine</span></p>
-            <p class="mb-2 text-success-emphasis fw-semibold text-uppercase">City: <span class="ms-2 text-white-50 text-capitalize">Lviv</span></p>
-            <p class="mb-0 text-success-emphasis fw-semibold text-uppercase">Street: <span class="ms-2 text-white-50 text-capitalize">Shevchenka</span></p>
+            <p class="mb-2 text-success-emphasis fw-semibold text-uppercase">
+              Country:
+              <span class="ms-2 text-white-50 text-capitalize">Ukraine</span>
+            </p>
+            <p class="mb-2 text-success-emphasis fw-semibold text-uppercase">
+              City: <span class="ms-2 text-white-50 text-capitalize">Lviv</span>
+            </p>
+            <p class="mb-0 text-success-emphasis fw-semibold text-uppercase">
+              Street:
+              <span class="ms-2 text-white-50 text-capitalize">Shevchenka</span>
+            </p>
           </div>
 
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+          >
             <ul class="d-flex justify-content-center about__social-list">
               <li
                 class="d-flex justify-content-center align-items-center rounded-circle"
@@ -606,10 +630,17 @@
         <!-- copyright -->
         <div class="row mt-4 border-top border-secondary">
           <div class="col text-center">
-            <p class="m-0 pt-4 text-secondary">Copyright &copy 2023 All rights reserved. Created by <a href="#" class="text-capitalize text-white text-decoration-none footer__copyright-creator">bohdan boliubash</a>.</p>
+            <p class="m-0 pt-4 text-secondary">
+              Copyright &copy 2023 All rights reserved. Created by
+              <a
+                href="#"
+                class="text-capitalize text-white text-decoration-none footer__copyright-creator"
+                >bohdan boliubash</a
+              >.
+            </p>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
 
     <!-- Bootstrap JS -->

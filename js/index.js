@@ -46,7 +46,7 @@ works.forEach((work, index) => {
   const row = $('<div class="row mb-5"></div>');
 
   const colPhoto = $('<div class="col-12 col-lg-5 mb-4 mb-lg-0 mx-auto d-flex justify-content-center align-items-center portfolio__col-photo"></div>');
-  const img = $(`<img src="../images/portfolio-images/${work.photo}.jpg" alt="${work.photo}" class="w-100 rounded-3"/>`);
+  const img = $(`<img src="./images/portfolio-images/${work.photo}.jpg" alt="${work.photo}" class="w-100 rounded-3"/>`);
   colPhoto.append(img);
 
   const colDesc = $('<div class="col-12 col-lg-5 mb-5 mb-lg-0 mx-auto d-flex flex-column justify-content-center"></div>');

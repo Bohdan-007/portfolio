@@ -189,8 +189,18 @@ body {
     height: 40px;
   }
 }
+.service .service__subtitle {
+  letter-spacing: 3px;
+}
 .service h2 {
   letter-spacing: 3px;
+}
+.service .service__card:hover .service__icon {
+  text-shadow: 0px 0px 10px #73bc29;
+}
+.service .service__card .service__icon {
+  transition: 0.2s;
+  color: #73bc29 !important;
 }
 
 .benefits h2 {

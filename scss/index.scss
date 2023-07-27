@@ -276,8 +276,24 @@ body {
 
 // SERVICE section
 .service {
+  .service__subtitle {
+    letter-spacing: 3px;
+  }
+
   h2 {
     letter-spacing: 3px;
+  }
+
+  .service__card {
+
+    &:hover .service__icon {
+      text-shadow: 0px 0px 10px $accent-color;
+    }
+
+    .service__icon {
+      transition: 0.2s;
+      color: $accent-color !important;
+    }
   }
 }
 
@@ -314,8 +330,9 @@ body {
 
   a {
     transition: 0.1s;
+
     &:hover {
-      color: $white-color !important ;
+      color: $white-color !important;
     }
   }
 }

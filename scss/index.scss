@@ -1,6 +1,8 @@
 // colors
 $accent-color: #73bc29;
 $white-color: #ffffff;
+$black-color: #000000;
+$main-background-color: #1b2028;
 $main-accent-background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
 $main-accent-background-hover: radial-gradient(circle at 10% 20%, rgb(85, 149, 27) 0.1%, rgb(183, 219, 87) 90%);
 
@@ -41,7 +43,7 @@ $main-accent-background-hover: radial-gradient(circle at 10% 20%, rgb(85, 149, 2
   }
 
   &:hover {
-    color: white;
+    color: $white-color;
 
     &:before {
       -webkit-transform: scaleX(1);
@@ -88,7 +90,7 @@ $main-accent-background-hover: radial-gradient(circle at 10% 20%, rgb(85, 149, 2
   }
 
   &:hover {
-    color: white;
+    color: $white-color;
 
     &:before {
       -webkit-transform: scale(2);
@@ -108,7 +110,7 @@ ul {
 
 // main styles
 body {
-  background-color: #1b2028;
+  background-color: $main-background-color;
 }
 
 // HEADER
@@ -120,7 +122,7 @@ body {
 
   width: 100%;
 
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: $black-color;
 
   @media (max-width: 768px) {
     .my-logo-text {
@@ -138,6 +140,18 @@ body {
       font-size: 16px !important;
     }
   }
+
+  ul {
+    li {
+      &:hover a {
+        color: $accent-color !important;
+      }
+    }
+  }
+
+  i {
+    color: $accent-color;
+  }
 }
 
 // HERO
@@ -148,7 +162,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   .hero-wrapper__text-block {
 
@@ -193,7 +206,6 @@ body {
         }
       }
     }
-
   }
 }
 
@@ -231,8 +243,6 @@ body {
 
     // Links list
     .about__social-list {
-
-      display: flex;
 
       & li {
         margin-right: 10px;
@@ -274,12 +284,34 @@ body {
   }
 }
 
-// SERVICE section
-.service {
-  .service__subtitle {
-    letter-spacing: 3px;
+// PORTFOLIO section
+.portfolio {
+
+  .portfolio__col-photo {
+    @media (max-width: 992px) {
+      & {
+        order: 0 !important;
+      }
+    }
   }
 
+  .portfolio__desccription {
+    @media (max-width: 576px) {
+      & {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  .portfolio__button {
+    @extend %tplbutton;
+  }
+}
+
+// SERVICE section
+.service {
+
+  .service__subtitle,
   h2 {
     letter-spacing: 3px;
   }
@@ -333,6 +365,50 @@ body {
 
     &:hover {
       color: $white-color !important;
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  li {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+
+    background-color: rgba(60, 60, 60, 0.5);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & i {
+      color: $white-color;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      & i {
+        color: $accent-color !important;
+        transform: scale(1.05);
+      }
+    }
+
+    @media (max-width: 576px) {
+      & {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .footer__copyright-creator {
+    transition: 0.2s;
+
+    &:hover {
+      color: $accent-color !important;
     }
   }
 }

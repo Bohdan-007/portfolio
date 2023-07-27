@@ -43,7 +43,7 @@
               </a>
 
               <button
-                class="navbar-toggler"
+                class="navbar-toggler border-0"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -51,7 +51,8 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-bars fs-3"></i>
               </button>
 
               <div
@@ -71,13 +72,15 @@
                     <a class="nav-link text-white" href="#about">About</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link text-white" href="#portfolio"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link text-white" href="#service">Service</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#benefits">Benefits</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Portfolio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#education"
@@ -163,7 +166,7 @@
               free to contact me.
             </p>
 
-            <ul class="mb-5 about__social-list">
+            <ul class="mb-5 d-flex about__social-list">
               <li
                 class="d-flex justify-content-center align-items-center rounded-circle"
               >
@@ -209,14 +212,40 @@
       </div>
     </div>
 
+    <!-- Portfolio secction -->
+    <div id="portfolio" class="portfolio mb-5 py-5">
+      <div class="container">
+        <!-- title -->
+        <div class="row">
+          <div class="col">
+            <h2
+              class="fw-bolder text-uppercase text-white text-center py-5 mb-5"
+            >
+              portfolio
+            </h2>
+          </div>
+        </div>
+
+        <!-- portfolio -->
+        <div class="row">
+          <div id="portfolioCol" class="col"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- Service section -->
     <div id="service" class="py-5 service">
       <div class="container">
         <!-- title -->
         <div class="row">
           <div class="col text-center">
-            <span class="pt-5 fs-5 text-white-50 fw-bolder text-uppercase fst-italic service__subtitle">what i do</span>
-            <h2 class="fw-bolder text-uppercase text-white text-center pt-2 pb-5">
+            <span
+              class="pt-5 fs-5 text-white-50 fw-bolder text-uppercase fst-italic service__subtitle"
+              >what i do</span
+            >
+            <h2
+              class="fw-bolder text-uppercase text-white text-center pt-2 pb-5"
+            >
               services
             </h2>
           </div>
@@ -510,6 +539,77 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="py-4 bg-black bg-opacity-50 footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-5 mb-md-0">
+            <a
+              href="#"
+              class="mb-4 d-flex align-items-center link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="./images/logo.jpg"
+                alt="Bohdan's photo"
+                class="rounded-circle my-logo-image me-1"
+                width="50"
+                height="50"
+              />
+              <span class="fs-4 text-white my-logo-text">BOHDAN BOLIUBASH</span>
+            </a>
+
+            <p class="mb-2 text-success-emphasis fw-semibold text-uppercase">Country: <span class="ms-2 text-white-50 text-capitalize">Ukraine</span></p>
+            <p class="mb-2 text-success-emphasis fw-semibold text-uppercase">City: <span class="ms-2 text-white-50 text-capitalize">Lviv</span></p>
+            <p class="mb-0 text-success-emphasis fw-semibold text-uppercase">Street: <span class="ms-2 text-white-50 text-capitalize">Shevchenka</span></p>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <ul class="d-flex justify-content-center about__social-list">
+              <li
+                class="d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <a
+                  href="https://www.linkedin.com/in/bohdan-boliubash-1b5b29279/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in fs-3"></i
+                ></a>
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <a href="https://t.me/b_o_s_ik" target="_blank"
+                  ><i class="fa-brands fa-telegram fs-3"></i
+                ></a>
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <a
+                  href="https://instagram.com/b_o_s.s.s?igshid=OGQ5ZDc2ODk2ZA=="
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram fs-3"></i
+                ></a>
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <a href="https://github.com/Bohdan-007" target="_blank"
+                  ><i class="fa-brands fa-github fs-3"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="row mt-4 border-top border-secondary">
+          <div class="col text-center">
+            <p class="m-0 pt-4 text-secondary">Copyright &copy 2023 All rights reserved. Created by <a href="#" class="text-capitalize text-white text-decoration-none footer__copyright-creator">bohdan boliubash</a>.</p>
+          </div>
+        </div>
+      </div>  
     </div>
 
     <!-- Bootstrap JS -->

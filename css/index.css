@@ -1,4 +1,4 @@
-.contact form button, .about .about__description button {
+.contact form button, .portfolio .portfolio__button, .about .about__description button {
   background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
   display: inline-block;
   vertical-align: middle;
@@ -8,7 +8,7 @@
   transition-property: color;
   transition-duration: 0.2s;
 }
-.contact form button:before, .about .about__description button:before {
+.contact form button:before, .portfolio .portfolio__button:before, .about .about__description button:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -24,13 +24,13 @@
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
 }
-.contact form button:hover, .about .about__description button:hover {
-  color: white;
+.contact form button:hover, .portfolio .portfolio__button:hover, .about .about__description button:hover {
+  color: #ffffff;
 }
-.contact form button:hover:before, .about .about__description button:hover:before {
+.contact form button:hover:before, .portfolio .portfolio__button:hover:before, .about .about__description button:hover:before {
   transform: scaleX(1);
 }
-.contact form button:active, .about .about__description button:active {
+.contact form button:active, .portfolio .portfolio__button:active, .about .about__description button:active {
   transform: scale(0.95);
 }
 
@@ -60,7 +60,7 @@
   transition-timing-function: ease-out;
 }
 .education .education__accordion-title:hover {
-  color: white;
+  color: #ffffff;
 }
 .education .education__accordion-title:hover:before {
   transform: scale(2);
@@ -82,7 +82,7 @@ body {
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: #000000;
 }
 @media (max-width: 768px) {
   .header .my-logo-text {
@@ -97,6 +97,12 @@ body {
   .header .my-logo-text {
     font-size: 16px !important;
   }
+}
+.header ul li:hover a {
+  color: #73bc29 !important;
+}
+.header i {
+  color: #73bc29;
 }
 
 .hero-wrapper {
@@ -160,9 +166,6 @@ body {
     font-size: 16px !important;
   }
 }
-.about .about__description .about__social-list {
-  display: flex;
-}
 .about .about__description .about__social-list li {
   margin-right: 10px;
   width: 50px;
@@ -189,9 +192,17 @@ body {
     height: 40px;
   }
 }
-.service .service__subtitle {
-  letter-spacing: 3px;
+@media (max-width: 992px) {
+  .portfolio .portfolio__col-photo {
+    order: 0 !important;
+  }
 }
+@media (max-width: 576px) {
+  .portfolio .portfolio__desccription {
+    font-size: 18px !important;
+  }
+}
+.service .service__subtitle,
 .service h2 {
   letter-spacing: 3px;
 }
@@ -219,4 +230,37 @@ body {
 }
 .contact a:hover {
   color: #ffffff !important;
+}
+
+.footer li {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(60, 60, 60, 0.5);
+}
+.footer li:last-child {
+  margin-right: 0;
+}
+.footer li i {
+  color: #ffffff;
+  transition: 0.2s;
+}
+.footer li:hover {
+  cursor: pointer;
+}
+.footer li:hover i {
+  color: #73bc29 !important;
+  transform: scale(1.05);
+}
+@media (max-width: 576px) {
+  .footer li {
+    width: 40px;
+    height: 40px;
+  }
+}
+.footer .footer__copyright-creator {
+  transition: 0.2s;
+}
+.footer .footer__copyright-creator:hover {
+  color: #73bc29 !important;
 }

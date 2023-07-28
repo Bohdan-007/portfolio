@@ -164,4 +164,10 @@ $(() => {
   window.addEventListener('scroll', () => {
     handleScrollAnimation();
   });
+
+
+  // scrolll up
+  $.scrollUp({
+    scrollText: '<i class="fa-solid fa-circle-chevron-up fs-1 scrollup-icon"></i>', // Text for element, can contain HTML
+  });
 });

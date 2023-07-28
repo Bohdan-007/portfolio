@@ -2,6 +2,7 @@
 $accent-color: #73bc29;
 $white-color: #ffffff;
 $black-color: #000000;
+
 $main-background-color: #1b2028;
 $main-accent-background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
 $main-accent-background-hover: radial-gradient(circle at 10% 20%, rgb(85, 149, 27) 0.1%, rgb(183, 219, 87) 90%);
@@ -411,5 +412,15 @@ body {
     &:hover {
       color: $accent-color !important;
     }
+  }
+}
+
+// Scroll up
+.scrollup-icon {
+  color: $accent-color;
+  transition: 0.5s;
+
+  &:hover {
+    color: #a9ff54;
   }
 }

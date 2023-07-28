@@ -265,3 +265,11 @@ body {
 .footer .footer__copyright-creator:hover {
   color: #73bc29 !important;
 }
+
+.scrollup-icon {
+  color: #73bc29;
+  transition: 0.5s;
+}
+.scrollup-icon:hover {
+  color: #a9ff54;
+}

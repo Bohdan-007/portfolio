@@ -1,4 +1,4 @@
-.contact form button, .portfolio .portfolio__button, .about .about__description button {
+.contact form button, .portfolio .portfolio__button, .about .about__description .about__hiring-btn {
   background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
   display: inline-block;
   vertical-align: middle;
@@ -8,7 +8,7 @@
   transition-property: color;
   transition-duration: 0.2s;
 }
-.contact form button:before, .portfolio .portfolio__button:before, .about .about__description button:before {
+.contact form button:before, .portfolio .portfolio__button:before, .about .about__description .about__hiring-btn:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -24,13 +24,13 @@
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
 }
-.contact form button:hover, .portfolio .portfolio__button:hover, .about .about__description button:hover {
+.contact form button:hover, .portfolio .portfolio__button:hover, .about .about__description .about__hiring-btn:hover {
   color: #ffffff;
 }
-.contact form button:hover:before, .portfolio .portfolio__button:hover:before, .about .about__description button:hover:before {
+.contact form button:hover:before, .portfolio .portfolio__button:hover:before, .about .about__description .about__hiring-btn:hover:before {
   transform: scaleX(1);
 }
-.contact form button:active, .portfolio .portfolio__button:active, .about .about__description button:active {
+.contact form button:active, .portfolio .portfolio__button:active, .about .about__description .about__hiring-btn:active {
   transform: scale(0.95);
 }
 
@@ -187,7 +187,7 @@ body {
   color: #73bc29 !important;
   transform: scale(1.05);
 }
-@media (max-width: 576px) {
+@media (max-width: 576psx) {
   .about .about__description .about__social-list li {
     width: 40px;
     height: 40px;
@@ -272,4 +272,14 @@ body {
 }
 .scrollup-icon:hover {
   color: #a9ff54;
+}
+
+.ajs-message {
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.ajs-message.ajs-success {
+  color: #032a0c;
+  border-color: #73bc29;
+  background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%) !important;
 }

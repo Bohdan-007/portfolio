@@ -271,7 +271,7 @@ body {
           }
         }
 
-        @media (max-width: 576px) {
+        @media (max-width: 576psx) {
           & {
             width: 40px;
             height: 40px;
@@ -280,7 +280,7 @@ body {
       }
     }
 
-    & button {
+    .about__hiring-btn {
       @extend %tplbutton;
     }
   }
@@ -422,5 +422,17 @@ body {
 
   &:hover {
     color: #a9ff54;
+  }
+}
+
+// Alert box
+.ajs-message {
+  border-radius: 5px;
+  border: 1px solid #fff;
+
+  &.ajs-success {
+    color: #032a0c;
+    border-color: $accent-color;
+    background: $main-accent-background !important;
   }
 }

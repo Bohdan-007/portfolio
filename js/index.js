@@ -1,4 +1,5 @@
 $(() => {
+
   // PORTFOLIO section
   class Work {
     #photo;
@@ -80,14 +81,13 @@ $(() => {
 
 
   // CONTACTS section
+
   // form validation
   (() => {
-    'use strict'
+    // 'use strict'
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
     const forms = document.querySelectorAll('.needs-validation')
 
-    // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
       form.addEventListener('submit', event => {
         if (!form.checkValidity()) {
@@ -100,6 +100,38 @@ $(() => {
     })
   });
 
+  // form submit
+  const form = document.getElementById("contactForm");
+
+  $(form).on("submit", function (event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+
+    $.ajax({
+      url: event.target.action,
+      type: form.method,
+      data: data,
+      processData: false,
+      contentType: false,
+      dataType: 'json',
+
+      success: function () {
+        console.log('Yes');
+        form.reset();
+
+        alertify.set('notifier', 'position', 'top-right');
+        alertify.success('The letter was sent successfully', 3, 'success');
+      },
+
+      error: () => {
+        console.log('No');
+      },
+
+      complete: function () {
+        console.log('Complete');
+      }
+    });
+  });
 
 
   // Animation
@@ -115,7 +147,8 @@ $(() => {
 
   const displayScrollElement = (el) => {
     const classList = Array.from(el.classList);
-
+    
+    // animation is used depending on the element
     switch (true) {
       case classList.includes('animate-right'):
         el.classList.add('animate__fadeInRight');
@@ -170,4 +203,5 @@ $(() => {
   $.scrollUp({
     scrollText: '<i class="fa-solid fa-circle-chevron-up fs-1 scrollup-icon"></i>', // Text for element, can contain HTML
   });
+
 });

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./libraries/animate/css/animate.min.css" />
     <!-- Scroll Up CSS -->
     <link rel="stylesheet" href="./plugins/scrollup/css/link.css" />
+    <!-- Alertify CSS -->
+    <link rel="stylesheet" href="./plugins/alertify/css/alertify.min.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -212,12 +214,14 @@
               </li>
             </ul>
 
-            <button
+            <a
+              id="aboutHiringBtn"
+              href="#contact"
               type="button"
-              class="btn btn-primary px-5 py-2 border-0 text-uppercase"
+              class="btn btn-primary px-5 py-2 border-0 text-uppercase about__hiring-btn"
             >
               hire me!
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -490,12 +494,15 @@
               mail me
             </h3>
             <form
+              id="contactForm"
               class="row g-3 needs-validation animate__animated animate-left"
-              novalidate
+              action="https://formspree.io/f/xleygdle"
+              method="POST"
             >
               <div class="col-12">
                 <input
                   type="text"
+                  name="Name"
                   class="form-control bg-dark-subtle border-0"
                   id="validationCustom01"
                   placeholder="Name"
@@ -507,6 +514,7 @@
               <div class="col-12">
                 <input
                   type="email"
+                  name="Email"
                   class="form-control bg-dark-subtle border-0"
                   id="validationCustom02"
                   placeholder="E-mail"
@@ -517,6 +525,7 @@
               <div class="col-12">
                 <input
                   type="text"
+                  name="subject"
                   class="form-control bg-dark-subtle border-0"
                   id="validationCustom02"
                   placeholder="Subject"
@@ -527,6 +536,7 @@
 
               <div class="col-12">
                 <textarea
+                  name="Message"
                   class="form-control bg-dark-subtle border-0"
                   placeholder="Message"
                 ></textarea>
@@ -535,6 +545,7 @@
 
               <div class="col-12">
                 <button
+                  id="contactFormButton"
                   type="submit"
                   class="btn btn-primary px-5 py-2 border-0 text-uppercase"
                 >
@@ -681,6 +692,8 @@
     <script src="./libraries/jqueri-ui/js/jquery-ui.min.js"></script>
     <!-- Scroll Up JS -->
     <script src="./plugins/scrollup/js/jquery.scrollUp.min.js"></script>
+    <!-- Alertify JS -->
+    <script src="./plugins/alertify/js/alertify.min.js"></script>
     <!-- My JS -->
     <script src="./js/index.js"></script>
   </body>

@@ -29,16 +29,32 @@ $(() => {
 
   const works = [
     new Work('minimo-site', 'site', "A site about Someone's lifestyle",
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, id.Facere quidem quod error voluptate tempore corruptiaut eum deserunt.Quam ad quidem dolores praesentium ipsumcum, beatae sequi obcaecati ?',
+      'This site can be used as a personal site for any media person or simply as a blog for anyone. Created by the Materialize library.',
       'view project', 'https://bohdan-007.github.io/minimo/'),
 
-    new Work('tour-guide-site', 'site', 'tour guide site', 'some description...', 'view project', 'https://bohdan-007.github.io/tour-guide/'),
+    new Work('tour-guide-site', 'site', 'tour guide site',
+      'This site can be used as the main site for a travel agency or for a group of tourists who conduct hikes. This site was developed using the Bootstrap and UIkit libraries.',
+      'view project', 'https://bohdan-007.github.io/tour-guide/'),
 
-    new Work('lms-site', 'web-app', 'LMS platform for any events', 'some description...', 'view project', 'https://bohdan-007.github.io/lms/'),
+    new Work('lms-site', 'web-app', 'LMS platform for any events',
+      'This application can be used as a client part of a small social network or a platform for learning. Tools such as HTML, CSS and the Materialize library were used to develop this service.',
+      'view project', 'https://bohdan-007.github.io/lms/'),
 
-    new Work('tic-tac-toe', 'web-game', 'TIC-TAC-TOE game for fun', 'some description...', 'view project', 'https://bohdan-007.github.io/tic-tac-toe/'),
+    new Work('tic-tac-toe', 'web-game', 'TIC-TAC-TOE game for fun',
+      'Tic-Tac-Toe is a web game. You can have fun playing Tic-Tac-Toe by yourself or in a company. HTML, CSS and JS were used to create this game.',
+      'view project', 'https://bohdan-007.github.io/tic-tac-toe/'),
 
-    new Work('animated', 'animation', 'animated site', 'some description...', 'view project', 'https://bohdan-007.github.io/animate-site/'),
+    new Work('animated', 'animation', 'animated site',
+      'This is a simple animated site. Was created to practice with animation in CSS. During development, no third-party animation libraries were used, only pure CSS.',
+      'view project', 'https://bohdan-007.github.io/animate-site/'),
+
+    new Work('to-do-list', 'web-app', 'to do list',
+      'This CSS generator is designed to make it easier to style elements. The SASS / SCSS preprocessor was used in the development.',
+      'view project', 'https://bohdan-007.github.io/to-do-list/'),
+
+    new Work('css-generator', 'web-app', 'CSS generator',
+      'In this To Do List you can add, delete, mark as completed and save tasks that need to be completed. Developed using HTML, CSS, JS and jQueri.',
+      'view project', 'https://bohdan-007.github.io/css-generator/'),
   ];
 
   // creating and add work to portfolio list
@@ -147,7 +163,7 @@ $(() => {
 
   const displayScrollElement = (el) => {
     const classList = Array.from(el.classList);
-    
+
     // animation is used depending on the element
     switch (true) {
       case classList.includes('animate-right'):

@@ -91,6 +91,7 @@ $(() => {
 
 
   // EDUCATION section
+  // Accordion tabs
   $("#accordion").accordion({
     collapsible: true
   });
@@ -100,8 +101,6 @@ $(() => {
 
   // form validation
   (() => {
-    // 'use strict'
-
     const forms = document.querySelectorAll('.needs-validation')
 
     Array.from(forms).forEach(form => {
@@ -217,7 +216,7 @@ $(() => {
 
   // scrolll up
   $.scrollUp({
-    scrollText: '<i class="fa-solid fa-circle-chevron-up fs-1 scrollup-icon"></i>', // Text for element, can contain HTML
+    scrollText: '<i class="fa-solid fa-circle-chevron-up fs-1 scrollup-icon"></i>',
   });
 
 });

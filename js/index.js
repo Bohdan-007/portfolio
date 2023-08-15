@@ -49,11 +49,11 @@ $(() => {
       'view project', 'https://bohdan-007.github.io/animate-site/'),
 
     new Work('to-do-list', 'web-app', 'to do list',
-      'This CSS generator is designed to make it easier to style elements. The SASS / SCSS preprocessor was used in the development.',
+      'In this To Do List you can add, delete, mark as completed and save tasks that need to be completed. Developed using HTML, CSS, JS and jQuery.',
       'view project', 'https://bohdan-007.github.io/to-do-list/'),
 
     new Work('css-generator', 'web-app', 'CSS generator',
-      'In this To Do List you can add, delete, mark as completed and save tasks that need to be completed. Developed using HTML, CSS, JS and jQueri.',
+      'This CSS generator is designed to make it easier to style elements. The SASS / SCSS preprocessor was used in the development.',
       'view project', 'https://bohdan-007.github.io/css-generator/'),
   ];
 
